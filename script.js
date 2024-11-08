@@ -106,4 +106,21 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("minutos").innerHTML = minutos;
         document.getElementById("segundos").innerHTML = segundos;
     }, 1000); // Atualiza a cada 1 segundo
+   document.addEventListener("DOMContentLoaded", function () {
+        // Referência ao player de áudio e ao botão de play
+        const audioPlayer = document.getElementById("audio-player");
+        const playButton = document.getElementById("play-btn");
+    
+        // Lógica para controlar o play/pause
+        playButton.addEventListener("click", function () {
+            if (audioPlayer.paused) {
+                audioPlayer.play(); // Começa a tocar a música
+                playButton.textContent = "Pause"; // Troca o texto do botão para 'Pause'
+            } else {
+                audioPlayer.pause(); // Pausa a música
+                playButton.textContent = "Play"; // Troca o texto do botão para 'Play'
+            }
+        });
+    });
+    
 });
