@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
    
 
     // Lógica para o carrossel de imagens
-    const image = [
+    const images = [
         "image/IMG-20240420-WA0039.jpg",
         "image/IMG-20240420-WA0040.jpg",
         "image/IMG-20240421-WA0020.jpg",
